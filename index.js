@@ -25,7 +25,27 @@ else{
     console.log("no he is not married!\n");
 }
 
-let answer = 1;
-for(let i=0; i<10; i++){
-    console.log(i);
+let answer = 0;
+for(let i=0; i<=10; i++){
+    answer = answer+i;
 }
+console.log(answer);
+
+
+// arrays and objects
+// complex premitives
+
+const names = ["raj", "shrey", "shwarma", "shit"];
+console.log(names[0]);
+
+
+//2
+const nums = [1,2,3,4,5,6,7,8,9,10];
+for(let i=0; i<nums.length; i++){
+    if(nums[i]%2 == 0){
+        console.log(nums[i]);
+    }
+}
+
+//objects
+
