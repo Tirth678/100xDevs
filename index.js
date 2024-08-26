@@ -47,5 +47,28 @@ for(let i=0; i<nums.length; i++){
     }
 }
 
-//objects
 
+//example
+const personArray = ["raman", "chaman", "priya"];
+const genderArray = ["male", "male", "female"];
+
+for(let i=0; i<personArray.length; i++){
+    if(genderArray[i] == "male"){
+        console.log(personArray[i]);
+    }
+}
+
+//objects
+const user1 = {
+    firstname: "harkirat",
+    firstage: 12
+}
+console.log(user1("firstage"));
+
+// better approach
+const userlist = [
+    {firstname: "kirart",
+        age: 12 },
+    {firstname: "nothing",
+        age: "minor"}
+    ]
