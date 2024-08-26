@@ -63,7 +63,7 @@ const user1 = {
     firstname: "harkirat",
     firstage: 12
 }
-console.log(user1("firstage"));
+// console.log(user1("firstage"));
 
 // better approach
 const userlist = [
@@ -72,3 +72,9 @@ const userlist = [
     {firstname: "nothing",
         age: "minor"}
     ]
+
+function addSum(a,b){
+    return a+b;
+}
+
+console.log(addSum(1,2));
