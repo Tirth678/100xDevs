@@ -1,4 +1,4 @@
-function sum(num1, num2) {
+function sum(num1, num2, fnToCall) {
     let result = num1 + num2;
     return result;
 }
@@ -16,5 +16,7 @@ function displayResultPassive(data) {
 
 // my solution
 // console.log(displayResult(sum(1,2)))
-const ans = sum(1,2)
+// you can driectly call a function beside default parameters
+//callbacks
+const ans = sum(1,2, displayResultPassive)
 displayResult(ans);
