@@ -85,3 +85,6 @@ function greet(){
 }
 //after 3 seconds greet will be called
 setTimeout(greet, 3*1000);
+// it will call function after a interval of time
+setInterval(greet, 1*5);
+
