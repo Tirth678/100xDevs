@@ -14,4 +14,7 @@ function displayResultPassive(data) {
 // You are only allowed to call one function after this
 // How will you displayResult of a sum
 
-console.log(displayResult(sum(1,2)))
+// my solution
+// console.log(displayResult(sum(1,2)))
+const ans = sum(1,2)
+displayResult(ans);
