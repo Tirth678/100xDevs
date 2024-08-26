@@ -20,3 +20,4 @@ function displayResultPassive(data) {
 //callbacks
 const ans = sum(1,2, displayResultPassive)
 displayResult(ans);
+

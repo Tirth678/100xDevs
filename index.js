@@ -78,3 +78,10 @@ function addSum(a,b){
 }
 
 console.log(addSum(1,2));
+
+// SetTimeOut
+function greet(){
+    console.log("hello worldf\n");
+}
+//after 3 seconds greet will be called
+setTimeout(greet, 3*1000);
