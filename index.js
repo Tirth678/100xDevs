@@ -18,4 +18,14 @@ console.log("his name is" + name + "age is" + age);
 
 
 //1
+if(married == true){
+    console.log("yes he is married!!\n");
+}
+else{
+    console.log("no he is not married!\n");
+}
 
+let answer = 1;
+for(let i=0; i<10; i++){
+    console.log(i);
+}
