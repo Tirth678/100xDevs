@@ -53,3 +53,11 @@ for(let i=0; i<person.length; i++){
         console.log(person[i]);
     }
 }
+
+
+// 4. Write a program that reverses all the elements of an array
+const str = "harry";
+function reverseString(str) {
+  return str.split("").reverse().join("");
+}
+reverseString("harry");
