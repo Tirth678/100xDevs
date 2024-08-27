@@ -56,8 +56,37 @@ for(let i=0; i<person.length; i++){
 
 
 // 4. Write a program that reverses all the elements of an array
-const str = "harry";
 function reverseString(str) {
   return str.split("").reverse().join("");
 }
-reverseString("harry");
+console.log(reverseString("harry"));
+
+
+// 1. Write a function that finds the sum of two numbers
+function addSum(x,y){
+    return x+y;
+}
+console.log(addSum(1,2));
+// 2. Write another function that displays this result in a pretty format
+function prettier(addSum){
+    console.log("the sum of the 2 values: "+addSum);
+}
+console.log(prettier(addSum(1,2)));
+// 3. Write another function that takes this sum and prints it in passive tense
+function passiveadd(prettier){
+    console.log("in passive term!\n");
+}
+console.log(passiveadd(prettier(addSum(1,2))))
+
+// done
+
+// 1. Create a counter in Javascript (counts down from 30 to 0)
+
+for(let i=30; i>=0; i--){
+    console.log(i);
+}
+// 2. Calculate the time it takes between a setTimeout call and the inner function actually runnin
+function not(){
+    console.log("test");
+}
+setTimeout(not, 10*1000);
