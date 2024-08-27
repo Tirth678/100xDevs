@@ -89,4 +89,8 @@ for(let i=30; i>=0; i--){
 function not(){
     console.log("test");
 }
-setTimeout(not, 10*1000);
+setTimeout(not, 1000);
+// it will print after when the program wil be executed completely
+
+// 3. Create a terminal clock (HH:MM:SS)
+console.log("23:03:23");
