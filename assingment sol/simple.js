@@ -49,7 +49,7 @@ function largestelement(number){
 const person = ["kirat", "soham", "priya"];
 const genderarr = ["male", "male", "female"];
 for(let i=0; i<person.length; i++){
-    if(person[i] == "male"){
-        console.log(genderarr[i]);
+    if(genderarr[i] == "male"){
+        console.log(person[i]);
     }
 }
