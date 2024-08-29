@@ -29,3 +29,46 @@ console.log("Hello world!!\n");
 
 // in this setimeout will execute after one second so control will switch to console.log and then timeout will work
 
+
+// what are other asyn functions provided?
+// setimeout
+// fs.readfile
+// fetch
+
+const fs = require("fs");
+// file system module
+
+fs.readFile("a.txt", "utf-8", function(err, data){
+    console.log(data);
+})
+
+console.log("hi there");
+// this will still run first
+// asyn function hai fir readfile run hoga
+
+
+//JS browser architecutre
+// call back
+// web api
+// call back queue
+
+
+//promises
+
+function findSum(n){
+    let ans = 0;
+    for(let i=0; i<n; i++){
+        ans += i;
+    }
+    return ans;
+}
+function findSumTill100(){
+    findSum(100);
+}
+setTimeout(findSumTill100, 1000);
+console.log("Hello!!");
+
+
+// the code is ugly.
+// promises are syntactical sugar that make this code slightly more redable
+
