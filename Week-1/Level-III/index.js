@@ -72,3 +72,11 @@ console.log("Hello!!");
 // the code is ugly.
 // promises are syntactical sugar that make this code slightly more redable
 
+// pending, resolved, rejected
+let d = new Promise(function(resolve){
+resolve();
+});
+function callBack(){
+    console.log("shit got real\n");
+}
+d.then(callBack);
