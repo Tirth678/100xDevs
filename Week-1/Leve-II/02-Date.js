@@ -25,4 +25,5 @@ function dateMethods() {
   }
 
   // Example Usage for Date Methods
+  // function ko call krna mat bhulna
   dateMethods();
