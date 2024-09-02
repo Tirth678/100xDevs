@@ -121,3 +121,4 @@ function generalised(a,b, fn){
 }
 let ansnon = generalised(1,2, square);
 console.log(ansnon);
+

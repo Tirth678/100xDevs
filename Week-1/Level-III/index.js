@@ -36,9 +36,7 @@ console.log("Hello world!!\n");
 // fetch
 
 const fs = require("fs");
-// file system module
-
-fs.readFile("a.txt", "utf-8", function(err, data){
+fs.read("a.txt", "utf-8", function(err, data){
     console.log(data);
 })
 
