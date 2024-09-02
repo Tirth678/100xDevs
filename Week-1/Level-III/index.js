@@ -78,3 +78,4 @@ function callBack(){
     console.log("shit got real\n");
 }
 d.then(callBack);
+
