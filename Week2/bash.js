@@ -63,4 +63,11 @@ first ten rows of file
 last ten rows of file
 // tail a.txt
 
+pipe operator
+commadn 1 | command 2
+// whatever command comes from command 1 flows to command 2
+
+
+grep
+// helps to find recurance of particular word or phrase
 
