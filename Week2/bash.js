@@ -45,3 +45,11 @@ bash: a command line interpreator language
 // renaming a file
 // ex mv script.js runtime_script.js
 
+rm (remove)
+//deleting a file
+rm -r (remove a directory)
+// deleting a directory
+
+chmod (change file permissions)
+// modify the read, write and execute permissions of a file
+
