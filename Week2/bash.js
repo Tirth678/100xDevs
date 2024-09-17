@@ -70,4 +70,6 @@ commadn 1 | command 2
 
 grep
 // helps to find recurance of particular word or phrase
+// grep -h gives all the matched line
+// grep -hi "one". will check the whole directory
 
