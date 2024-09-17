@@ -52,4 +52,15 @@ rm -r (remove a directory)
 
 chmod (change file permissions)
 // modify the read, write and execute permissions of a file
+ugo-r,w
+
+// display something
+echo 'lol'
+
+first ten rows of file
+// head a.txt
+
+last ten rows of file
+// tail a.txt
+
 
