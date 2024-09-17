@@ -37,3 +37,11 @@
 // bash commands
 bash: a command line interpreator language
 
+// to recursivly make directories
+// mkdir -p frontend/scripts
+// mkdir -p frontend/html
+// mkdir -p frontend/css
+
+// renaming a file
+// ex mv script.js runtime_script.js
+
