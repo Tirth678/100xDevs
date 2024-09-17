@@ -20,7 +20,19 @@
 // mv a2.txt new-folder/
 9. cp (copy)
 // copy files
-// 
-10. nvm
-11. npm
-12. node
+// folder cant be copy
+// cp test2 tes3
+10. nvm (node version manager)
+11. npm (node package manager)
+// manage external depandenices ex. express
+// npm install array
+12. node(compile a js file)
+
+
+
+
+
+
+
+// bash commands
+
