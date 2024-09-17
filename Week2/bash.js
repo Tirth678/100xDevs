@@ -35,4 +35,5 @@
 
 
 // bash commands
+bash: a command line interpreator language
 
