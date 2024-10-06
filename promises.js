@@ -34,3 +34,4 @@ promisifiedFunction(1000).then(function(){
         console.log("second one is done");
     })
 });
+// promise is a class and p is a object
