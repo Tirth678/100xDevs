@@ -12,3 +12,6 @@ const ans = promisifiedFunction(1000);
 ans.then(function(){
     console.log("done");
 });
+
+//how to call a promisified function
+
