@@ -14,11 +14,25 @@
     <title>100xDevs</title>
 </head>
 <body>
+    <script>
+        function add(){
+           const a =  document.getElementById("firstValue").value;
+            const b = document.getElementById("secondValue").value;
+            const element = document.getElementById("Final Sum");
+           console.log(nothing);   
+           nothing.innerHTML = "Hello its nothing here"
+           const result = element.innerHTML = parseint(a)+parseInt(b);
+           console.log(result);
+        }
+    </script>
     <form action="">
-        <input type="text" placeholder="first value"> <br> <br>
-        <input type="text" placeholder="second value"> <br> <br>
-        <button>Find Sum</button>
+        <input id="firstValue" type="text" placeholder="first value"> <br> <br>
+        <input id="secondValue" type="text" placeholder="second value"> <br> <br>
+
     </form>
+    <div>
+        <button onclick="add()">SUBMIT NOW</button>
+    </div>
     <h1 class="container">
         This is heading no.0
     </h1>
@@ -29,5 +43,6 @@
         This is heading no.3
     </h3>
     
+    <div id="final-sum"></div>
 </body>
 </html>
