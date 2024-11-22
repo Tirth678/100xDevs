@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your BMI Calculator</title>
+    <script>
+        function nothing(){
+            const a = document.getElementById("first").value;
+            const b = document.getElementById("second").value;
+            const element = document.getElementById("final-sum");
+            console.log(`Hey there! your weight is${element.result} !`);
+            const result = element.innerHTML = parseInt(a) / parseInt(b*b);
+        }
+    </script>
+</head>
+<body>
+<form action="">
+    <input id="first" type="text" placeholder="Weight in Kg"> <br> <br>
+    <input id="second" type="text" placeholder="Height in m^2"> <br>
+</form>
+<br>
+<button id="result" onclick="nothing()">Check your BMI</button>
+<div id="final-sum"></div>
+    
+</body>
+</html>
