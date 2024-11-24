@@ -13,13 +13,14 @@
             padding-top: 10px;
             justify-content: center;
             text-align: right;
-            padding-right: 80px;
-
-            
+            /* padding-right: 900px; */
+            padding: 20px;
+            border-bottom: 0.1px black solid;
         }
         .nav a {
 
             padding: 20px 10px;
+            padding-right: 40px;
             text-decoration: none;
             font-size: small;
             color: rgb(0, 0, 0);
@@ -31,12 +32,31 @@
         #p{
             text-align: center;
             justify-content: center;
+            padding: 30px;
         }
         #logo{
             height: 20px;
             justify-content: left;
             height: 10px;
             padding-right: 500px;
+        }
+        #button{
+            justify-content: cetner;
+            padding: 40px;
+            text-align: center;
+
+        }
+        /* New CSS for the button */
+        button {
+            background-color: blue;
+            color: white; 
+            border: none; 
+            padding: 10px 20px; 
+            font-size: medium; 
+            cursor: pointer; 
+        }
+        button:hover {
+            background-color: darkblue; /* Darker blue on hover */
         }
     </style>
     <meta charset="UTF-8">
@@ -63,7 +83,11 @@
             This is simple paragraph
         </p>
     </div>
-    
+    <div id="button">
+        <button>
+            Sign up for free
+        </button>
+    </div>
 
     
 </body>
