@@ -1,15 +1,15 @@
 <!-- Foundation Class of 100xDevs -->
- <!-- Basics of HTML and CSS -->
+ <!-- Basics of HTML -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <style>
-        #img{
+        #img {
             justify-content: center;
             padding-top: 100px;
             padding-left: 50px;
         }
-        .nav{
+        .nav {
             padding-top: 10px;
             justify-content: center;
             text-align: right;
@@ -23,37 +23,50 @@
             font-size: small;
             color: rgb(0, 0, 0);
         }
-        #welcome  {
+        #welcome {
             justify-content: center;
             text-align: center;
         }
-        #p{
+        #p {
             text-align: center;
             justify-content: center;
-            padding: 8px;
+            padding: 30px;
         }
-        #logo{
+        #logo {
             height: 20px;
             justify-content: left;
             height: 10px;
             padding-right: 500px;
         }
-        #button{
-            justify-content: cetner;
-            padding: 10px;
+        #button {
+            justify-content: center;
+            padding: 40px;
             text-align: center;
-
         }
         button {
-            background-color: blue;
-            color: white; 
-            border: none; 
-            padding: 10px 10px; 
-            font-size: medium; 
-    
+            background-color: blue; /* Set background color to blue */
+            color: white; /* Set text color to white for contrast */
+            border: none; /* Remove default border */
+            padding: 10px 20px; /* Add padding for better appearance */
+            font-size: medium; /* Set font size */
+            cursor: pointer; /* Change cursor to pointer on hover */
         }
         button:hover {
-            background-color: rgb(94, 92, 92); 
+            background-color: darkblue; /* Darker blue on hover */
+        }
+        .con {
+            display: flex; /* Use flexbox to align items */
+            justify-content: flex-end; /* Align items to the right */
+            align-items: center; /* Center items vertically */
+            padding-top: 70px; /* Adjust padding as needed */
+            padding-left: 0; /* Remove left padding */
+        }
+        .con h6 {
+            margin-right: 20px; /* Add space between text and image */
+            text-align: left;
+        }
+        .con img {
+            margin-left: 20px; /* Add space between text and image */
         }
     </style>
     <meta charset="UTF-8">
@@ -70,7 +83,7 @@
             <a href="">Pricing</a>
         </nav>
     </div>
-    <img id="img" src="https://zerodha.com/static/images/landing.png" height="400px" >
+    <img id="img" src="https://zerodha.com/static/images/landing.png" height="400px">
     
     <div id="welcome">
         <h1>Invest in everything</h1>
@@ -82,11 +95,17 @@
         </p>
     </div>
     <div id="button">
-        <button onclick="">
+        <button>
             Sign up for free
         </button>
     </div>
 
+    <div class="con">
+        <h6>
+            This is some text next to the image
+        </h6>
+        <img src="https://zerodha.com/static/images/ecosystem.png" height="400px" alt="">
+    </div>
     
 </body>
 </html>
