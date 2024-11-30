@@ -4,14 +4,11 @@
 // scripting language specification on which js is based
 
 // writing express code here
-const express = require('express')
-const app = express()
+const exrpess = require('express');
+const app = express();
 const port = 3000
 
-app.get('/', (req, res) => {
-  res.send('This my first code in express!!')
+app.get('/', function(req, res){
+    res.send('hello world')
 })
-
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
+app.listen(port)
