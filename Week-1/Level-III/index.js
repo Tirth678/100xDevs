@@ -9,6 +9,9 @@
 // but we can context-switch b/w multiple tasksn or delegate task to other people
 // by context switching we can decrease its time taken by a good amount
 
+
+// JS is still single threaded in nature, it goes line by line only
+// the async call is either handled by the OS in readfile or webAPI(c++ code in browser) in setTimeOut
 // example: reading a file from your default system
 // running a speicfic function after some time
 // delegated the task to setimeout and then other functions will be done simultanoisly
