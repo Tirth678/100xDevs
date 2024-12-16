@@ -55,6 +55,8 @@ console.log("hi there");
 
 
 //promises
+// just wrapping around or using a asnyc function to make your own function is 1st approch in promises
+// 
 
 function findSum(n){
     let ans = 0;
