@@ -1,6 +1,8 @@
-// slice of a given string
-function getSlice(str, start, end){
+const { split } = require("postcss/lib/list");
+
+// split the given string
+const splitString = (str, sep) => {
     console.log("Original string: ", str);
-    console.log("Slice of string: ", str.slice(start, end));
+    console.log("After split: ", str.split(sep));
 }
-getSlice("Hello world", 0, 5);
+splitString("Hello world", " ");
