@@ -1,8 +1,6 @@
-const { split } = require("postcss/lib/list");
-
-// split the given string
-const splitString = (str, sep) => {
+// convert a given string to uppercase
+const toUpper = (str) => {
     console.log("Original string: ", str);
-    console.log("After split: ", str.split(sep));
+    console.log("Upper-case: ", str.toUpperCase());
 }
-splitString("Hello world", " ");
+toUpper("Hello");
