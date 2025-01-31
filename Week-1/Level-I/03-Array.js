@@ -8,7 +8,6 @@
 // push()
 function pushExample(arr, element) {
     console.log("Original Array:", arr);
-
     arr.push(element);
     console.log("After push:", arr);
   }
