@@ -107,3 +107,19 @@ setTimeout(function(){
         console.log("Hola2");
     },2000);
 }, 1000);
+// nesting of async functions
+
+// approach #2: using promises
+function myOwnSetTimeOut(duration){ // promise which expects a function which needs resolve as a argument
+    const p = new Promise(function(resolve){
+        setTimeout(function(){
+            resolve();
+        }, 1000);
+    }); 
+    return p;
+}
+// function will return you a promise
+const ans = myOwnSetTimeOut(1000); // pata kaise chalega konsa function call hoga
+ans.then(function(){
+    console.log("Async call is done");
+});
