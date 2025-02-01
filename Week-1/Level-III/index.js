@@ -121,5 +121,8 @@ function myOwnSetTimeOut(duration){ // promise which expects a function which ne
 // function will return you a promise
 const ans = myOwnSetTimeOut(1000); // pata kaise chalega konsa function call hoga
 ans.then(function(){
-    console.log("Async call is done");
+    console.log("Async call is done"); // after this is done, pls console log async call is done
 });
+// this is calling the function
+// single thread hi sab krta hai wo allot webAPI ya callback Queue pe jata hai
+// promises also goes to callback queue
