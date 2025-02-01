@@ -12,10 +12,11 @@
 
 // JS is still single threaded in nature, it goes line by line only
 // the async call is either handled by the OS in readfile or webAPI(c++ code in browser) in setTimeOut
-// example: reading a file from your default system
+// example: reading a file from your default operating system
 // running a speicfic function after some time
 // delegated the task to setimeout and then other functions will be done simultanoisly
 
+// there are 2 async functions we are looking at:
 function findSum(n){
     let ans = 0;
     for(let i=0; i<n; i++){
@@ -27,7 +28,7 @@ function findSumTill100(){
     return findSum(100);
 }
 
-setTimeout(findSumTill100, 1000);
+setTimeout(findSumTill100, 1000); // this function will be called after 1 sec till then thread will move on to orther code written below.
 console.log("Hello world!!\n");
 
 // in this setimeout will execute after one second so control will switch to console.log and then timeout will work
