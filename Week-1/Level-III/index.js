@@ -85,3 +85,25 @@ function callBack(){
 }
 d.then(callBack);
 
+
+
+// promises 
+// creating your own async function.
+// approach #1: wrapping an async function
+function setMyOwnTimeOut(fn, duration){
+    setTimeout(fn, duration);
+}
+setMyOwnTimeOut(function(){
+    console.log("HIII");
+}, 2000);
+// this is when you call a callback and it could lead to callback hell
+// promises is just a better way to write code
+
+// promises is a way to write code that is more readable and less prone to errors
+setTimeout(function(){
+    console.log("Hola");
+
+    setTimeout(function(){
+        console.log("Hola2");
+    },2000);
+}, 1000);
