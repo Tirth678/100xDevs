@@ -17,17 +17,41 @@
 
 // writing express code here
 const express = require('express');
-const port = 3000
+const { a } = require('motion/react-client');
 const app = express();
+const port = 3000;
 
-
-app.get('/', function(req, res){
-    res.send('hello world')
+app.get("/route-handler", function(req, res){
     res.json({
-        name: "tirth",
-        age: 21,
-        roll: 326
+        name: "Kirat",
+        age: 12
+
     })
 })
 
-app.listen(port)
+// ifconfig
+app.get("/cal",function(req,res){
+    console.log("This are headers\n");
+    res.json({msg: "2+2=4"})
+    console.log(`${msg}`)
+})
+
+
+app.get("/home", function(req, res){
+    res.get("Welcome to the home page\n");
+    res.json({
+        home: "this is home",
+        nothing: "this is meant to be nothing",
+        nothing2: "this is meant to be nothing2",
+        age: 12
+    })
+
+})
+app.get('/', function(req, res){
+    res.send("Hello world\n");
+    req.send("Hello this is an error in your code\n");
+    
+});
+app.listen(port, function(){
+    console.log(`Example of app listening on port ${port}`);
+});
