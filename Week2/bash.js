@@ -100,3 +100,6 @@ ls *Zoo*
 cat indexedDB.html
 // print the content of the file
 
+mv index.js index.js.bak
+// rename the file
+
