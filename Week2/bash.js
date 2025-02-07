@@ -1,4 +1,7 @@
 // terminal and bash shortcuts and functions
+
+const { label } = require("motion/react-client")
+
 // terminal is nothing but another interface to do things in your machine
 1. pwd (print working directory)
 // base directory of your system (path to my currrent folder)
@@ -72,4 +75,28 @@ grep
 // helps to find recurance of particular word or phrase
 // grep -h gives all the matched line
 // grep -hi "one". will check the whole directory
+
+ls -la
+// list all the files in the directory with all the details
+
+ls -s
+// list all the files in the directory with their size
+
+ls -la /sub-directory
+// list all the files in the sub-directory with all the details
+
+ls -iR | grep "file_name"
+// list all the files in the directory with all the details and then search for a particular file
+
+ls *.json
+// list all the files with .json extension
+
+ls Zoo*
+// list all the files starting with Zoo
+
+ls *Zoo*
+// list all the files containing Zoo
+
+cat indexedDB.html
+// print the content of the file
 
