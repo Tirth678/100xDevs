@@ -103,3 +103,31 @@ cat indexedDB.html
 mv index.js index.js.bak
 // rename the file
 
+ls -R | grep "index.js"
+// list all the files in the directory with all the details and then search for a particular file
+
+mkdir -p frontend/scripts
+// create a directory
+mkdir -p frontend/index.html
+// create a directory
+
+mv file1   file2
+// change location of file
+
+cp file1 file2
+// copy file1 to file2
+
+chmod u+x file1 
+// give user execute permission
+
+chmod g+wx file2
+// give group write and execute permission
+
+chmod u-x file2
+// remove user execute permission
+
+wc file1
+// count the number of lines, words and characters in a file
+
+grep 'one' file1
+// search for a word in a file
