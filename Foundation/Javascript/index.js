@@ -100,3 +100,7 @@ function add(a,b){
     data = a+b;
     console.log(`Sum's result = `, data);
 }
+
+
+// callbacks
+// passing another function as a parameter
