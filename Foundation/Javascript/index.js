@@ -114,3 +114,30 @@ function setAdd(n){
 }
 let answer = setAdd(n);
 console.log(answer);
+
+function square(n){
+    return n*n;
+}
+function doThat(a,b){
+    const value1 = square(a);
+    const value2 = square(b);
+    const ans = value1+value2;
+    return ans;
+}
+
+
+// now we're making a callback function
+
+function square(a){
+    return a*a;
+}
+function cube(a){
+    return a*a*a;
+}
+function sumOfThings(a,b,fn){
+    const result1 = fn(a);
+    const result2 = fn(b);
+    return result1+result2;
+}
+let ans = sumOfThings(1,2, cube);
+console.log(ans);
