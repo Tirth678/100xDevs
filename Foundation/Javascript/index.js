@@ -104,3 +104,13 @@ function add(a,b){
 
 // callbacks
 // passing another function as a parameter
+
+function setAdd(n){
+    let add = 0;
+    for(let i=0; i<n; i++){
+        add = add+i;
+    }
+    return add;
+}
+let answer = setAdd(n);
+console.log(answer);
