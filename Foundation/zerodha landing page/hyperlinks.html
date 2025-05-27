@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hyperlinks Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .link-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 8px;
+        }
+        
+        a {
+            color: #387ed1;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        a:hover {
+            color: #2d6ab4;
+            text-decoration: underline;
+        }
+        
+        .button-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #387ed1;
+            color: white;
+            border-radius: 4px;
+            text-decoration: none;
+            margin: 10px 0;
+        }
+        
+        .button-link:hover {
+            background-color: #2d6ab4;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Different Types of Hyperlinks</h1>
+
+    <div class="link-section">
+        <h2>Basic Links</h2>
+        <p>Visit <a href="https://www.google.com">Google</a> for search.</p>
+        <p>Check out <a href="https://www.github.com">GitHub</a> for code repositories.</p>
+    </div>
+
+    <div class="link-section">
+        <h2>Links with Attributes</h2>
+        <p><a href="https://www.wikipedia.org" target="_blank">Wikipedia (Opens in new tab)</a></p>
+        <p><a href="mailto:example@email.com">Send us an email</a></p>
+        <p><a href="tel:+1234567890">Call us</a></p>
+    </div>
+
+    <div class="link-section">
+        <h2>Button-Style Links</h2>
+        <a href="#" class="button-link">Sign Up</a>
+        <a href="#" class="button-link">Learn More</a>
+    </div>
+
+    <div class="link-section">
+        <h2>Internal Page Links</h2>
+        <p><a href="#top">Go to Top</a></p>
+        <p><a href="#section1">Jump to Section 1</a></p>
+        <p><a href="#section2">Jump to Section 2</a></p>
+    </div>
+
+    <div class="link-section">
+        <h2>File Downloads</h2>
+        <p><a href="documents/sample.pdf" download>Download PDF</a></p>
+        <p><a href="images/photo.jpg" download>Download Image</a></p>
+    </div>
+
+    <div class="link-section">
+        <h2>Image Links</h2>
+        <a href="https://www.example.com">
+            <img src="https://via.placeholder.com/150" alt="Clickable image" style="border: 1px solid #ddd; border-radius: 4px;">
+        </a>
+    </div>
+
+    <div id="section1" class="link-section">
+        <h2>Section 1</h2>
+        <p>This is section 1 content that can be linked to using internal page links.</p>
+    </div>
+
+    <div id="section2" class="link-section">
+        <h2>Section 2</h2>
+        <p>This is section 2 content that can be linked to using internal page links.</p>
+    </div>
+</body>
+</html>

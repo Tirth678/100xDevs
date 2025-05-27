@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Article with Images</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .article-section {
+            display: flex;
+            align-items: start;
+            margin-bottom: 40px;
+            gap: 30px;
+        }
+
+        .article-section:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .text-content {
+            flex: 1;
+        }
+
+        .image-container {
+            flex: 1;
+            max-width: 500px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .article-section {
+                flex-direction: column !important;
+            }
+
+            .image-container {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="article-section">
+        <div class="text-content">
+            <h2>Beautiful Mountains</h2>
+            <p>The majestic mountains stand tall against the horizon, their peaks touching the clouds. The rugged terrain and snow-capped summits create a breathtaking panorama that has inspired adventurers and artists for generations.</p>
+            <p>These natural wonders serve as both a challenge to climbers and a sanctuary for diverse wildlife. The changing seasons paint different pictures across their faces, from the vibrant colors of spring to the pristine white of winter.</p>
+        </div>
+        <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b" alt="Mountain landscape">
+        </div>
+    </div>
+
+    <div class="article-section">
+        <div class="text-content">
+            <h2>Ocean Wonders</h2>
+            <p>The vast ocean stretches endlessly to the horizon, its waters holding countless mysteries beneath the surface. The gentle waves create a rhythmic symphony that has calmed souls for millennia.</p>
+            <p>Marine life thrives in this blue expanse, from the smallest plankton to the largest whales. The ocean's importance to our planet's ecosystem cannot be overstated, as it regulates climate and provides sustenance for millions.</p>
+        </div>
+        <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Ocean view">
+        </div>
+    </div>
+
+    <div class="article-section">
+        <div class="text-content">
+            <h2>Forest Serenity</h2>
+            <p>Deep within the forest, ancient trees reach skyward, their canopy creating a natural cathedral. Sunlight filters through the leaves, creating dancing patterns on the forest floor.</p>
+            <p>The forest is a complex ecosystem where countless species coexist in perfect harmony. From the smallest insects to the tallest trees, each plays a vital role in maintaining the delicate balance of nature.</p>
+        </div>
+        <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1511497584788-876760111969" alt="Forest path">
+        </div>
+    </div>
+</body>
+</html>

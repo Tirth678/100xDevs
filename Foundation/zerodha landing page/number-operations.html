@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Number Operations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .section {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        input[type="number"] {
+            padding: 8px;
+            margin: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 200px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .output {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-left: 4px solid #28a745;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Number Operations</h1>
+
+        <!-- Sum Calculator Section -->
+        <div class="section">
+            <h2>Sum Calculator (1 to n)</h2>
+            <input type="number" id="sumInput" placeholder="Enter a number (n)">
+            <button onclick="calculateSum()">Calculate Sum</button>
+            <div id="sumOutput" class="output"></div>
+        </div>
+
+        <!-- Palindrome Checker Section -->
+        <div class="section">
+            <h2>Palindrome Number Checker</h2>
+            <input type="number" id="palindromeInput" placeholder="Enter a number">
+            <button onclick="checkPalindrome()">Check Palindrome</button>
+            <div id="palindromeOutput" class="output"></div>
+        </div>
+    </div>
+
+    <script>
+        // Function to calculate sum from 1 to n
+        function calculateSum() {
+            const n = parseInt(document.getElementById('sumInput').value);
+            let output = '';
+            
+            if (isNaN(n) || n < 1) {
+                output = 'Please enter a valid positive number';
+            } else {
+                // Method 1: Using loop
+                let sum1 = 0;
+                for(let i = 1; i <= n; i++) {
+                    sum1 += i;
+                }
+                
+                // Method 2: Using formula n*(n+1)/2
+                let sum2 = (n * (n + 1)) / 2;
+                
+                output = `Sum from 1 to ${n}:\n`;
+                output += `Using loop: ${sum1}\n`;
+                output += `Using formula: ${sum2}`;
+            }
+            
+            document.getElementById('sumOutput').textContent = output;
+        }
+
+        // Function to check if a number is palindrome
+        function checkPalindrome() {
+            const num = document.getElementById('palindromeInput').value;
+            let output = '';
+            
+            if (num === '' || isNaN(num)) {
+                output = 'Please enter a valid number';
+            } else {
+                // Convert to string for easy digit comparison
+                const numStr = num.toString();
+                const len = numStr.length;
+                let isPalindrome = true;
+                
+                // Check digits from both ends
+                for (let i = 0; i < len / 2; i++) {
+                    if (numStr[i] !== numStr[len - 1 - i]) {
+                        isPalindrome = false;
+                        break;
+                    }
+                }
+                
+                output = `${num} is ${isPalindrome ? 'a' : 'not a'} palindrome number`;
+                
+                // Show explanation
+                if (isPalindrome) {
+                    output += `\nReading from left to right and right to left: ${num}`;
+                }
+            }
+            
+            document.getElementById('palindromeOutput').textContent = output;
+        }
+    </script>
+</body>
+</html>

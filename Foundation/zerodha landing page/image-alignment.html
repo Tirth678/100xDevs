@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Alignment Example</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .image-container {
+            margin-bottom: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .left-image {
+            float: left;
+            margin-right: 20px;
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .center-image {
+            display: block;
+            margin: 0 auto;
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .right-image {
+            float: right;
+            margin-left: 20px;
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" 
+             alt="Left aligned image" 
+             class="left-image">
+             
+        <img src="https://images.unsplash.com/photo-1511576661531-b34d7da5d0bb" 
+             alt="Center aligned image" 
+             class="center-image">
+             
+        <img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e" 
+             alt="Right aligned image" 
+             class="right-image">
+    </div>
+</body>
+</html>

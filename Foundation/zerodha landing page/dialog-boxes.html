@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Dialog Boxes Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .section {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .output {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-left: 4px solid #28a745;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript Dialog Boxes Demo</h1>
+
+        <!-- Alert Box Section -->
+        <div class="section">
+            <h2>Alert Box</h2>
+            <p>Simple alert box that shows a message to the user.</p>
+            <button onclick="showAlert()">Show Alert</button>
+            <div id="alertOutput" class="output"></div>
+        </div>
+
+        <!-- Confirm Box Section -->
+        <div class="section">
+            <h2>Confirm Box</h2>
+            <p>Confirmation dialog that returns true/false based on user's choice.</p>
+            <button onclick="showConfirm()">Show Confirm</button>
+            <div id="confirmOutput" class="output"></div>
+        </div>
+
+        <!-- Prompt Box Section -->
+        <div class="section">
+            <h2>Prompt Box</h2>
+            <p>Input dialog that allows users to enter text.</p>
+            <button onclick="showPrompt()">Show Prompt</button>
+            <div id="promptOutput" class="output"></div>
+        </div>
+    </div>
+
+    <script>
+        // Alert Box Demo
+        function showAlert() {
+            alert("This is a simple alert box!");
+            document.getElementById('alertOutput').textContent = 
+                "Alert box was displayed and closed";
+        }
+
+        // Confirm Box Demo
+        function showConfirm() {
+            const result = confirm("Do you want to proceed?");
+            document.getElementById('confirmOutput').textContent = 
+                `User clicked ${result ? "OK" : "Cancel"}`;
+        }
+
+        // Prompt Box Demo
+        function showPrompt() {
+            const name = prompt("Please enter your name:", "John Doe");
+            let message;
+            
+            if (name === null) {
+                message = "User cancelled the prompt";
+            } else if (name === "") {
+                message = "User didn't enter anything";
+            } else {
+                message = `User entered: ${name}`;
+            }
+            
+            document.getElementById('promptOutput').textContent = message;
+        }
+    </script>
+</body>
+</html>

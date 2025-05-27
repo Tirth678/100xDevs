@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Attributes Demo</title>
+    <style>
+        /* Body Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        /* Container Styles */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border: 2px solid #333;
+            border-radius: 8px;
+        }
+
+        /* Text and Font Styles */
+        h1 {
+            color: #2c3e50;
+            font-family: 'Georgia', serif;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        /* Paragraph with Background */
+        .text-bg {
+            background-color: #e8f4f8;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Border Examples */
+        .border-demo {
+            margin: 20px 0;
+            padding: 15px;
+        }
+
+        .border-solid {
+            border: 2px solid #e74c3c;
+            margin-bottom: 10px;
+        }
+
+        .border-dashed {
+            border: 2px dashed #3498db;
+            margin-bottom: 10px;
+        }
+
+        .border-dotted {
+            border: 2px dotted #2ecc71;
+            margin-bottom: 10px;
+        }
+
+        /* Margin Examples */
+        .margin-demo {
+            background-color: #ffeaa7;
+            padding: 15px;
+            margin: 30px 20px;
+            border: 1px solid #fdcb6e;
+        }
+
+        /* List Styles */
+        .custom-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .custom-list li {
+            padding: 10px;
+            margin: 5px 0;
+            background-color: #f8f9fa;
+            border-left: 3px solid #6c5ce7;
+            transition: all 0.3s ease;
+        }
+
+        .custom-list li:hover {
+            background-color: #e9ecef;
+            transform: translateX(10px);
+        }
+
+        /* Color Gradient Background */
+        .gradient-bg {
+            background: linear-gradient(45deg, #a8e6cf, #dcedc1);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            color: #2d3436;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CSS Attributes Demonstration</h1>
+
+        <!-- Text and Background -->
+        <div class="text-bg">
+            This paragraph demonstrates text styling with background color, padding, and border.
+        </div>
+
+        <!-- Border Examples -->
+        <div class="border-demo">
+            <div class="border-solid">Solid Border Example</div>
+            <div class="border-dashed">Dashed Border Example</div>
+            <div class="border-dotted">Dotted Border Example</div>
+        </div>
+
+        <!-- Margin Example -->
+        <div class="margin-demo">
+            This div demonstrates margin spacing and background color
+        </div>
+
+        <!-- List Example -->
+        <ul class="custom-list">
+            <li>Custom styled list item 1</li>
+            <li>Custom styled list item 2</li>
+            <li>Custom styled list item 3</li>
+            <li>Custom styled list item 4</li>
+        </ul>
+
+        <!-- Gradient Background -->
+        <div class="gradient-bg">
+            This section shows a gradient background with custom text color
+        </div>
+    </div>
+</body>
+</html>

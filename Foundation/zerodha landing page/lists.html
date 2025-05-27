@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Styled Lists Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .list-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        /* Basic Unordered List */
+        .basic-list {
+            list-style-type: disc;
+            color: #444;
+        }
+
+        /* Custom Bullet List */
+        .custom-bullet {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .custom-bullet li {
+            padding-left: 25px;
+            position: relative;
+            margin-bottom: 10px;
+        }
+
+        .custom-bullet li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #387ed1;
+        }
+
+        /* Horizontal List */
+        .horizontal-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .horizontal-list li {
+            background-color: #387ed1;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+        }
+
+        /* Grid List */
+        .grid-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 15px;
+        }
+
+        .grid-list li {
+            background-color: #fff;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        /* Ordered List with Custom Styling */
+        .custom-ordered {
+            list-style: none;
+            counter-reset: item;
+            padding-left: 0;
+        }
+
+        .custom-ordered li {
+            counter-increment: item;
+            margin-bottom: 10px;
+            padding-left: 40px;
+            position: relative;
+        }
+
+        .custom-ordered li:before {
+            content: counter(item);
+            background-color: #387ed1;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="list-section">
+        <h2>Basic Unordered List</h2>
+        <ul class="basic-list">
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+            <li>Fourth item</li>
+        </ul>
+    </div>
+
+    <div class="list-section">
+        <h2>Custom Bullet List</h2>
+        <ul class="custom-bullet">
+            <li>Custom arrow bullet point</li>
+            <li>Modern looking design</li>
+            <li>Easy to customize</li>
+            <li>Clean and minimal</li>
+        </ul>
+    </div>
+
+    <div class="list-section">
+        <h2>Horizontal List</h2>
+        <ul class="horizontal-list">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+        </ul>
+    </div>
+
+    <div class="list-section">
+        <h2>Grid List</h2>
+        <ul class="grid-list">
+            <li>Grid Item 1</li>
+            <li>Grid Item 2</li>
+            <li>Grid Item 3</li>
+            <li>Grid Item 4</li>
+            <li>Grid Item 5</li>
+            <li>Grid Item 6</li>
+        </ul>
+    </div>
+
+    <div class="list-section">
+        <h2>Custom Ordered List</h2>
+        <ol class="custom-ordered">
+            <li>First ordered item</li>
+            <li>Second ordered item</li>
+            <li>Third ordered item</li>
+            <li>Fourth ordered item</li>
+        </ol>
+    </div>
+</body>
+</html>

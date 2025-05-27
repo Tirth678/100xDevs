@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Demo</title>
+    <!-- Include jQuery from CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: #3498db;
+            margin: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .highlight {
+            background-color: #e74c3c;
+            transform: scale(1.1);
+        }
+        
+        .button {
+            padding: 10px 20px;
+            background-color: #2ecc71;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        
+        #output {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f5f5f5;
+            border-left: 4px solid #3498db;
+        }
+    </style>
+</head>
+<body>
+    <h1>jQuery Examples</h1>
+
+    <!-- Elements for manipulation -->
+    <div class="box"></div>
+    <button id="toggleBtn" class="button">Toggle Box</button>
+    <button id="animateBtn" class="button">Animate Box</button>
+    <button id="addTextBtn" class="button">Add Text</button>
+    <div id="output"></div>
+
+    <!-- jQuery Script -->
+    <script>
+        // Wait for document to be ready
+        $(document).ready(function() {
+            // Toggle box visibility
+            $('#toggleBtn').click(function() {
+                $('.box').fadeToggle(500);
+            });
+            
+            // Animate box
+            $('#animateBtn').click(function() {
+                $('.box').toggleClass('highlight');
+            });
+            
+            // Add text to output
+            $('#addTextBtn').click(function() {
+                $('#output').append('<p>Text added at: ' + new Date().toLocaleTimeString() + '</p>');
+            });
+            
+            // Mouse events on box
+            $('.box')
+                .mouseenter(function() {
+                    $(this).css('background-color', '#9b59b6');
+                })
+                .mouseleave(function() {
+                    $(this).css('background-color', '#3498db');
+                })
+                .click(function() {
+                    $(this).animate({
+                        width: '+=50px',
+                        height: '+=50px'
+                    }, 500);
+                });
+        });
+    </script>
+</body>
+</html>
